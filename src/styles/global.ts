@@ -1,9 +1,10 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root{
         --backgroud: #f0f2f5;
         --red: #e52e4d;
+        --green: #33CC95;
         --blue: #5429cc;
 
         --blue-light: #6933ff;
@@ -32,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body{
         background: var(--backgroud);
-        -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: antialiased;        
     }
 
     body, input, textarea, button{
