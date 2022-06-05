@@ -1,9 +1,9 @@
-import { DashBoard } from "./Dashboard";
-import { Header } from "./Header";
+import { DashBoard } from "./Components/Dashboard";
+import { Header } from "./Components/Header";
 import { GlobalStyle } from "./styles/global";
 import Modal from "react-modal";
 import { useState } from "react";
-import { NewTransactionModal } from "./NewTransactionModal";
+import { NewTransactionModal } from "./Components/NewTransactionModal";
 
 Modal.setAppElement("#root");
 
