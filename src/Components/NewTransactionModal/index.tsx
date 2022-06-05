@@ -6,7 +6,7 @@ import outcomeImg from "../../assets/outcome.svg";
 import { FormEvent, useState } from "react";
 import { api } from "../../services/api";
 import { useContext } from "react";
-import { TransactionsContext } from "../../TransactionContext";
+import { useTransaction } from "../../hooks/useTransaction";
 
 interface NewTransactionModal {
   isOpen: boolean;
@@ -14,7 +14,7 @@ interface NewTransactionModal {
 }
 
 export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionModal) {
-  const { createTransaction } = useContext(TransactionsContext);
+  const { createTransaction } = useTransaction();
   const [type, setType] = useState("deposit");
 
   const [title, setTitle] = useState("");
